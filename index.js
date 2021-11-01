@@ -61,6 +61,7 @@ app.get("/createdb", (req, res) => {
 
   app.get("/showall", (req, res) => {
     let sql = `select * from employee`;
+    console.log("Fetched all the rows");
     db.query(sql, function (err, result, fields) {
         if (err) throw err;
         console.log(result);
