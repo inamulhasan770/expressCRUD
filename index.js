@@ -54,7 +54,6 @@ app.get("/createdb", (req, res) => {
         console.log("Inserted into Table");
       });
     console.log(bdy)
-    
     res.send("Inserted to the table")
   });
 
